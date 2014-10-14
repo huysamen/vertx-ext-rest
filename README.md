@@ -15,7 +15,7 @@ Current work includes implementing the concept of a SecurityContext and Principa
 Currently the `Accept` header matching for content negotiation is still a bit primitive. The framework should work perfectly for 99% of use cases when building strict RESTful  services though. At present you can only register a single consumption content type per resource, and the framework will only use exact matching instead of a quality score best fit approach.
 
 #### About Request and Response filter priority
-To match RESTEasy and Jersey does priorities, please note that the order of execution is as follows; Request filters are executed in ascending priority, i.e. from 1 to *max*. Response filters however are executed in reverse order, i.e. from *max* to 0. The priority number 0 for request filters are reserved for pre-matching filters.
+To match the way RESTEasy and Jersey do priorities, please note that the order of execution is as follows; Request filters are executed in ascending priority, i.e. from 1 to *max*. Response filters however are executed in reverse order, i.e. from *max* to 0. The priority number 0 for request filters are reserved for pre-matching filters.
 <p>
 In the case where priorities are equal, filters are chosen arbitrarily, so please keep in this consideration if you filter chains are order dependant.
 <p>
