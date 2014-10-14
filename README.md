@@ -1,6 +1,4 @@
 # Vert.x 3 REST framework
-<hr>
-
 
 ## Introduction
 This framework aims to ease the adoption of Vert.x 3 by people used to using frameworks like Jersey and RESTEasy. It introduces the following concepts into Vert.x 3:
